@@ -2,15 +2,14 @@
 #include <stdio.h> 
 #include <math.h>
 #include <iostream>
+#include<cfloat>
 
 int main(void) {
 	char pass;
 	int j = 0;
 	double max = DBL_MIN;
 	double compare = 0.0;
-	char openfile[255];
-	char supportopen[] = "n12_0.01_des.plt";
-	strncpy(openfile, supportopen, 17);
+	char openfile[] = "n12_0.01_des.plt";
 	FILE* data = NULL;
 
 	data = fopen(openfile, "r");
